@@ -1,0 +1,70 @@
+
+@mixin clearFix{
+  &:after{
+    content: "";
+    display: block;
+    clear:both;
+  }
+}
+@mixin title{
+  h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@mixin banner{
+  position: relative;
+  img{
+    width:100%;
+  }
+  .banner-content{
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      top:50px;
+      width:100%;
+      @include mQ(700px)
+      {
+        overflow: hidden;
+        font-size: 20px;
+        max-height: 225px;
+      }
+  }
+  span{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .sub-title{
+    font-size: 1.5em;
+  }
+  li{
+    padding: 10px;
+  }
+}
+
+@mixin grid($cols,$mgn)
+{
+    margin-bottom: $mgn;
+    margin-right: $mgn;
+    float:left;
+    width:((100% - (($cols - 1) * $mgn)) / $cols );
+    &:nth-child(#{$cols}n){
+      margin-right: 0;
+    }
+
+}
+
+@mixin mQ($args...){
+  @if length($args) == 1{
+    @media screen and (max-width: nth($args, 1)){
+      @content;
+    }
+  }
+  @if length($args) == 2{
+    @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+      @content;
+    }
+  }
+}

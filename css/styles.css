@@ -1,0 +1,171 @@
+body {
+  font-family: arial;
+  background: #f8f9fb;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#main-nav {
+  background: #032f3e;
+}
+#main-nav ul {
+  width: 100%;
+}
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#main-nav li {
+  text-align: center;
+  width: 16.6666666667%;
+  float: left;
+}
+#main-nav li a {
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  color: #fff;
+}
+#main-nav li a:hover {
+  background: #04455b;
+}
+
+.lead-banner {
+  position: relative;
+  text-align: right;
+}
+.lead-banner img {
+  width: 100%;
+}
+.lead-banner .banner-content {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .lead-banner .banner-content {
+    overflow: hidden;
+    font-size: 20px;
+    max-height: 225px;
+  }
+}
+.lead-banner span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.lead-banner .sub-title {
+  font-size: 1.5em;
+}
+.lead-banner li {
+  padding: 10px;
+}
+
+.lessons-banner {
+  position: relative;
+  text-align: left;
+}
+.lessons-banner img {
+  width: 100%;
+}
+.lessons-banner .banner-content {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .lessons-banner .banner-content {
+    overflow: hidden;
+    font-size: 20px;
+    max-height: 225px;
+  }
+}
+.lessons-banner span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.lessons-banner .sub-title {
+  font-size: 1.5em;
+}
+.lessons-banner li {
+  padding: 10px;
+}
+
+#services h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+#services ul {
+  margin: 2%;
+  text-align: center;
+  width: 100%;
+}
+#services ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#services ul li {
+  float: left;
+  width: 33.3333333333%;
+}
+#services ul img {
+  width: 60%;
+}
+#services ul a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #032f3e;
+}
+#services ul a:hover {
+  color: #3e1203;
+}
+
+#projects h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+#projects li {
+  margin-bottom: 2%;
+  margin-right: 2%;
+  float: left;
+  width: 23.5%;
+}
+#projects li:nth-child(4n) {
+  margin-right: 0;
+}
+#projects img {
+  width: 100%;
+}
