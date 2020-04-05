@@ -5,7 +5,7 @@
 
 ### Required ...
 > * Install Sass     [link](https://sass-lang.com/install)
-> * Preprose
+> * Preprose > Convert Sass file to css
 ***
 
 ## Worked on 
